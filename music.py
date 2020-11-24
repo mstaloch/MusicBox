@@ -29,7 +29,7 @@ while True:
 			if event.key == pygame.K_e:
 				ting.play()
 			if event.key == pygame.K_r:
-				banner.play
+				banner.play()
 			if event.key == pygame.K_t:
 				pling.play()
 
