@@ -1,36 +1,36 @@
-import pygame, time, keyboard
+import pygame
 from pygame import mixer
 
 
 pygame.init()
 mixer.init()
 
+#SOUNDS
 blop = pygame.mixer.Sound("/home/rambler/264/MusicBox/sounds/Blop.ogg")
-#blop.play()
-#time.sleep(3)
+clang = pygame.mixer.Sound("/home/rambler/264/MusicBox/sounds/Clang.ogg")
+ting = pygame.mixer.Sound("/home/rambler/264/MusicBox/sounds/Ting.ogg")
+banner = pygame.mixer.Sound("/home/rambler/264/MusicBox/sounds/Banner.ogg")
+pling = pygame.mixer.Sound("/home/rambler/264/MusicBox/sounds/Pling.ogg")
 
-#pygame.display.set_mode()
 
-
+#MAIN
+print("Press a key to play a sound! (ESC to quit)")
 while True:
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
-			#pygame.quit()
 			sys.exit()
 		if event.type == pygame.KEYDOWN:
 			if event.key == pygame.K_q:
 				blop.play()
-				time.sleep(0.8)
-				break
 			if event.key == pygame.K_ESCAPE:
-				#airhorn.play()
-				#time.sleep(1)
 				sys.exit()
-				break
-#airhorn = pygame.mixer.Sound("home/rambler/264/MusicBox/sounds/AlienDrum.wav")
-#airhorn.play()
+			if event.key == pygame.K_w:
+				clang.play()
+			if event.key == pygame.K_e:
+				ting.play()
+			if event.key == pygame.K_r:
+				banner.play
+			if event.key == pygame.K_t:
+				pling.play()
 
-#time.sleep(3)
-
-print("DONE")
 
