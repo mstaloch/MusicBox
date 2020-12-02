@@ -32,6 +32,8 @@ ping = pygame.mixer.Sound("/home/rambler/264/MusicBox/sounds/ping.ogg")
 punch = pygame.mixer.Sound("/home/rambler/264/MusicBox/sounds/punch.ogg")
 slap = pygame.mixer.Sound("/home/rambler/264/MusicBox/sounds/slap.ogg")
 woof = pygame.mixer.Sound("/home/rambler/264/MusicBox/sounds/woof.ogg")
+buzzer = pygame.mixer.Sound("/home/rambler/264/MusicBox/sounds/buzzer.ogg")
+eagle = pygame.mixer.Sound("/home/rambler/264/MusicBox/sounds/eagle.ogg")
 
 pygame.display.init()
 screen = pygame.display.set_mode ( ( 320 , 240 ) )
@@ -93,3 +95,7 @@ while True:
 				slap.play()
 			if event.key == pygame.K_b:
 				woof.play()
+			if event.key == pygame.K_n:
+				buzzer.play()
+			if event.key == pygame.K_m:
+				eagle.play()
