@@ -13,6 +13,9 @@ banner = pygame.mixer.Sound("/home/rambler/264/MusicBox/sounds/Banner.ogg")
 pling = pygame.mixer.Sound("/home/rambler/264/MusicBox/sounds/Pling.ogg")
 moo = pygame.mixer.Sound("/home/rambler/264/MusicBox/sounds/moo.ogg")
 
+pygame.display.init()
+screen = pygame.display.set_mode ( ( 320 , 240 ) )
+
 #MAIN
 print("Press a key to play a sound! (ESC to quit)")
 while True:
